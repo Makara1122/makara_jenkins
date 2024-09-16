@@ -60,7 +60,7 @@ pipeline {
                     
                     // Run the container on the specified port
                     sh """
-                        docker run -d -p ${params.DEPLOY_PORT}:3000 --name ${params.CONTAINER_NAME} ${params.CONTAINER_NAME}:latest
+                        docker run -d -p ${params.DEPLOY_PORT}:3009 --name ${params.CONTAINER_NAME} ${params.CONTAINER_NAME}:latest
                     """
                 }
             }
